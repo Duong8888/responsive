@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    width: 1440px;
+    margin: auto;
+    font-family: 'Anton', sans-serif;
+    
+}
+
+header{
+    display: flex;
+}
+
+header .logo{
+    margin: 18px 16px;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 1333px;
+}
+li{
+    list-style: none;
+    margin: 0 16px;
+    line-height: 86px;
+}
+li>a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.title h1{
+    font-size: 48px;
+    font-weight: Regular;
+    margin: 64px 16px 32px;
+}
+
+.main-box{
+    width: 1440px;
+    display: flex;
+}
+
+.box{
+    height: 400px;
+    width: 33%;
+    margin: 0 15px 30px;
+}
+.box-img{
+    width: 100%;
+    height: 252px;
+    overflow: hidden;
+}
+.box img{width: 100%;height: 100%;transition: 0.25s;}
+
+.box:hover img{
+    transform: scale(1.3);
+}
+
+
+.text-img p{
+    margin: 16px 0;
+    color: #FD4756;
+    font-size: 16px;
+    font-weight: bold;
+}
+.text-img a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sub-banner img{
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    margin-top: 16px;
+}
+
+footer p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left:16px;
+    float: left;
+    line-height: 100px;
+}
+
+.btn{
+    background-color: #FD4756;
+    width: 180px;
+    margin: 25px 16px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+}
+#icon{
+    display: none;
+}
+
+@media only screen and (max-width:46.1875em){
+    #icon{
+        display: block;
+        color: #000;
+        font-size: 50px;
+        line-height: 85px;
+        margin-left: 200px;
+    }
+    #wrapper{
+        width: 100%;
+    }
+    ul{
+        display: none;
+    }
+    .main-box{
+        flex-direction: column;
+    }
+    .box{
+        width: 345px;
+        height: 100%;
+    }
+    footer{
+        padding-left: 40px;
+        width: 100%;
+    }
+    .btn{display: none;}
+}
